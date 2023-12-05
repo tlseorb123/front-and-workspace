@@ -7,61 +7,55 @@
 </head>
 <br>
     <h2>주문하기</h2>
-    <br action="">
-    <label for="userid">고객명 : </label><input type="text">
-    <p>
-        <label for="tel">전화번호 : </label>
-        <input type="tel" id="tel">
-    </p>
-    <p>
+<form action="">
+    <label for="userid">고객명 : </label><input type="text" id="name" name="name">
+
+    <br></br>
+
+    <label for="phone">전화번호</label>
+    <input type="tel" id="phone" name="phone">
+    
+    <br /><br />
+    
         <label for="email">이메일 :</label>
         <input type="email" id="email" name="email">
-    </p>
 
     <fieldset>
         <legend>피자 사이즈</legend>
-        <label><input type="checkbox" name="interest" value="Small">Small </label>
-        <p>
-            <label><input type="checkbox" name="interest" value="Medium">Medium</label>
-        </p>
-        <label><input type="checkbox" name="interest" value="Large">Large</label>
+        <input type="radio" id="small" name="size" value="small">Small 
+        <label for="small">small</label>
+        <br><br>
+        <input type="radio" id="medium" name="size" value="medium">medium
+        <label for="medium">msdium</label>
+        <br><br>
+        <input type="radio" id="small" name="size" value="small">Small
    </fieldset>
 
     <fieldset>
         <legend>토핑 선택</legend>
-        <p>
-        <label><input type="checkbox" name="interest" value="베이컨">베이컨</label>
-      </p>
-       <p>
-        <label><input type="checkbox" name="interest" value="치즈">치즈</label>
-      </p>
-      <p>
-        <label><input type="checkbox" name="interest" value="양파">양파</label>
-      </p>
-        <label><input type="checkbox" name="interest" value="버섯">버섯</label>
+        <input type="checkbox" name="topping" id="베이컨" value="베이컨">
+        <label for="베이컨">베이컨</label>
+        <input type="checkbox" name="topping" id="치즈" value="치즈">치즈
+        <label for="치즈">치즈</label>
+        <input type="checkbox" name="topping" id="양파" value="양파">양파
+        <label for="양파">양파</label>
+        <input type="checkbox" name="topping" id="버섯" value="버섯">버섯
+        <label for="버섯">버섯</label>
     </fieldset> 
      
     <br>
     <label for="time">희망 배송 시간 : </label>
     <input type="time" id="time">
-    </br>    
-     <br>
-        <label>배송시 요청사항 :</label>
-    </br>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+    <br>  <br>
+
+    <label for="memo">배송시 요청사항 :</label>
+    <textarea name="memo" id="memo" cols="30" rows="10" placeholder="내용을 입력하세요" style="resize:none"></textarea>
     
     <br></br>
 
     <button type="button">주문하기</button>
 
-
-
-
-
-
-
-
-    
 </form>
 
 </body>

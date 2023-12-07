@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightsalmon;
+  background: linear-gradient(purple, pink);
+  height: 100vh;
+  padding: 40x;
+}
+.space {
+  /* background-color: white; */
+  background: 2px solid white;
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+.space img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.space hi {
+  font-size: 1.5rem;
+  color: gray;
+  margin-top: 5px;
+}
+.space a {
+  display: block;
+  /* background-color: lightsalmon; */
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.space a:hover {
+  /* background-color: black; */
+  background-color: black;
+  color: black;
+}

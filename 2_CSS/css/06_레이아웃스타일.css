@@ -81,7 +81,7 @@
 #border3 {
   /* double : 테두리를 이중선으로 표시 */
   border-style: double;
-  /* border-redius : 테두리의 모서리를 둥글게 지정하는 속성 */
+  /* border-radius : 테두리의 모서리를 둥글게 지정하는 속성 */
   border-radius: 20px;
   border-radius: 50%;
   /* top-left, top-right, bottom-left, bottom-right */
@@ -129,4 +129,45 @@
   width: 100px;
   height: 100px;
   background-color: blue;
+}
+/*visibility */
+.visibility {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+#vis1 {
+  visibility: hidden;
+  display: none;
+  background-color: beige;
+}
+#vis2 {
+  background-color: skyblue;
+}
+/* z-index */
+#z-outer {
+  position: relative;
+  height: 250px;
+}
+.z-index {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  position: absolute;
+}
+#z-index1 {
+  background-color: orange;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+#z-index2 {
+  background-color: blueviolet;
+  top: 50px;
+  left: 50px;
+  z-index: 999;
+}
+#z-index3 {
+  background-color: green;
+  z-index: -1;
 }

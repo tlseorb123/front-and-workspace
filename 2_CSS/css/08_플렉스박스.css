@@ -1,0 +1,73 @@
+.container {
+  height: 100vh;
+  background: lightcoral;
+
+  /* 1. display: flex; */
+  display: flex;
+
+  /* 2. flex-direction */
+  flex-direction: column;
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  flex-direction: row; /* 기본값 */
+
+  /* 3. flex-wrap */
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap; /* 기본값 */
+
+  /* 4. justify-content */
+  justify-content: flex-end;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: center;
+  justify-content: flex-start; /* 기본값 */
+
+  /* 5. align-items */
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch; /* 기본값 */
+
+  /* 6. align-content */
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+}
+
+.item {
+  background-color: white;
+  border: 3px solid black;
+  padding: 1rem;
+
+  /*flex */
+  flex-basis: auto; /* 기본값 */
+  flex: 1;
+}
+.item:nth-child(1) {
+  /* flex-grow: 1; */
+  align-self: flex-start;
+  order: 2;
+}
+.item:nth-child(2) {
+  /* flex-grow: 5; */
+  align-self: center;
+  order: 3;
+}
+.item:nth-child(3) {
+  /* flex-grow: 2; */
+  align-self: flex-end;
+  order: 1;
+}
+.item:nth-child(4) {
+  flex-grow: 3;
+}
+.item:nth-child(5) {
+  flex-grow: 1;
+}
+.item img {
+  width: 95px;
+  height: 95px;
+}

@@ -7,7 +7,7 @@ h3 {
   background-color: cornflowerblue;
 }
 #con-1 {
-  font-size: 0;
+  font-size: 20;
 }
 #con-2::after {
   content: "clear!";

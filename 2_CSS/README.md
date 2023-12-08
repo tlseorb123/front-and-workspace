@@ -373,12 +373,16 @@ html
 
 - 통제를 벗어난 위치에 있는 트렉의 크기를 지정하는 속성
 
-## grid-column-start, grid-column-end, grid-row-start, grid-row-end, grid-row
+````css
+.container {
+  grid-auto-rows: minmax(200px, auto);
+}
 
-- 각 셀의 영역을 지정하는 속성
-
-```css
-.item {
+## grid-column-start,
+grid-column-end,
+grid-row-start,
+grid-row-end,
+grid-row - 각 셀의 영역을 지정하는 속성 ```css .item {
   grid-column: 1/4;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -386,5 +390,33 @@ html
   grid-row: 2/4;
   grid-row-start: 2;
   grid-row-end: 4;
+}
+````
+
+## justify-items, align-items
+
+- 셀들의 정렬을 지정하는 속성
+
+```css
+/* 6. justify-items, align-items */
+.container {
+  justify-items: start;
+  justify-items: center;
+  justify-items: end;
+
+  align-items: start;
+  align-items: center;
+  align-items: end;
+}
+```
+
+## justify-self, align-self
+
+- 각 하나의 셀의 정렬을 지정하는 속성
+
+```css
+.item:nth {
+  justify-self: start or center or end;
+  align-self: start or center or end;
 }
 ```

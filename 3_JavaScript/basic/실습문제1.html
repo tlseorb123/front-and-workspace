@@ -7,10 +7,18 @@
   </head>
   <body>
     <!-- 
+      변수 명명 규칙 
+      1) 변수명에는 문자, 숫자, 기호는  $ , _ 만 사용
+      2) 첫 글자에는 숫자 금지
+      3) 예약어(const. if. switch...) 금지
+      4) 표기법대로 사용 - camelCase(낙타표기법)
+      5) 상수(const로 표시한 것 x )는  대문자 + snake_case(언더바 표기법)
+    -->
+    <!--
         Q1. 킬로그램(kg)을 파운드(lb)로 환산하여 console에 출력하시오.
            - 파운드 = 킬로그램 * 2.2
            예) 킬로그램 : 60  
-     -->
+  -->
     <script>
       const 킬로그램 = 60;
       console.log(킬로그램 * 2.2);
@@ -23,7 +31,8 @@
     -->
     <script>
       const a = 99;
-      console.log(a * 0.3);
+      const rt = a * 0.3;
+      console.log(rt);
     </script>
 
     <!-- 
@@ -32,10 +41,11 @@
            예) 윗변 : 10, 밑변 : 14, 높이 : 4
      -->
     <script>
-      const 윗변 = 10;
-      const 밑변 = 14;
-      const 높이 = 4;
-      console.log(((윗변 + 밑변) * 높이) / 2);
+      const win = 10;
+      const low = 14;
+      const lon = 4;
+      const hom = ((win + low) / 2) * lon;
+      console.log(hom);
     </script>
 
     <!-- 
@@ -44,17 +54,17 @@
            - 예) 정기 예금액 : 12,000,000
     -->
     <script>
-      const 정기 = 12000000;
-      console.log((정기 * 0.04) / 12);
+      const joo = 12000000;
+      const ei = (joo * 0.04) / 12;
+      console.log(ei);
     </script>
 
     <!-- 
         Q5. 머쓱이는 40살인 선생님이 몇 년도에 태어났는지 궁금해졌다. 나이 age가 주어질 때, 2023년을 기준 출생 연도를 console에 출력하시오.
      -->
     <script>
-      const b = 2023;
-      const c = 40;
-      console.log(b - c);
+      const age = 40;
+      console.log(2023 - age);
     </script>
 
     <!-- 
@@ -64,9 +74,11 @@
     <script>
       const q = 5500;
       const w = 15000;
+      // 최대 마실 수 있는 잔 수
       const abc = w / q;
-      console.log(parseInt(abc));
-      console.log(w - q * 2);
+      console.log(parseInt(abc)); // parseInt : 실수에서 정수로
+      // 남은 돈
+      console.log(w % q); // % 나머지란???
     </script>
 
     <!-- 
@@ -74,8 +86,11 @@
           양꼬치 64인분과 음료수 6개를 먹었다면 총얼마를 지불해야 하는지 console에 출력하시오.
      -->
     <script>
-      const ab = 12000;
-      console.log(ab * 64);
+      const ab = 6;
+      const qw = 64;
+      const se = parseInt(qw / 10);
+      const p = qw * 12000 + (ab - se) * 2000;
+      console.log(p);
     </script>
   </body>
 </html>

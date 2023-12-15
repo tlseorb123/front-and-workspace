@@ -21,8 +21,8 @@
               삼각형의 넓이 = (삼각형의 너비 * 삼각형의 높이) / 2;
     -->
     <script>
-      function triangle(a, b) {
-        return (a * b) / 2;
+      function triangle(width, hight) {
+        return (width * hight) / 2;
       }
       console.log(triangle(5, 8)); // 20
       console.log(triangle(3, 8)); // 12
@@ -33,19 +33,26 @@
              원의 넓이 = 반지름 * 반지름 * 3.14;
     -->
     <script>
-      function round(a, b, c) {
-        return a * 3.14 * 2;
+      function round(r) {
+        return r * 3.14 * 2;
       }
       console.log(round(2)); // 12.56
 
-      function area(a, b, c) {
-        return a * a * 3.14;
+      function area(r) {
+        return r * r * 3.14;
       }
       console.log(area(3)); // 28.26
     </script>
 
     <!-- Q4. 시작 수(n1)과 끝 수(n2)가 주어졌을 때 n1 ~ n2의 합계를 구하는 함수를 만들어 주세요 -->
     <script>
+      function sum(n1, n2) {
+        let total = 0;
+        for (let i = n1; i <= n2; i++) {
+          total += i;
+        }
+        return total;
+      }
       console.log(sum(10, 20)); // 165
       console.log(sum(100, 200)); // 15150
     </script>
@@ -57,8 +64,50 @@
                구매가가 100000원 이상 : 10%
     -->
     <script>
+      // function calculate(price) {
+      //   if (price >= 100000) {
+      //     //  10만원 이상 -> 그 뒤에 나오는 조건은 다 10만원 미만
+      //     return price * 0.9;
+      //   } else if (price >= 50000) {
+      //     // 5만원 이상 -> 뒤에 나오는 조건은 다 5만원 미만
+      //     return price * 0.925;
+      //   } else if (price >= 10000) {
+      //     // 만원 이상 -> 그 외에는 만원 미만    =======> 첫번째 방법
+      //     return price * 0.95;
+      //   }
+      //   return price;
+      // }
+
+      function calculate(price) {
+        let rate = 1;
+        if (price >= 100000) {
+          // rate = 10;
+          rate = 0.9;
+        } else if (price >= 50000) {
+          // rate = 7.5
+          rate = 0.925;
+        } else if (price >= 10000) {
+          // rate = 5;
+          rate = 0.95;
+        }
+        //  return price * ((100 - rate) / 100);
+        return price * rate;
+      }
       console.log(calculate(20000)); // 19000
       console.log(calculate(65000)); // 60125
+    </script>
+
+    <!-- console.log9("합계")
+          console.log("합계", 12)
+          console.log("합계", 12, "평균") -->
+    <!-- 가변 매개변수(파라미터) : 안 쓴다! -->
+    <script>
+      function sum(...args) {
+        console.log(args);
+      }
+      sum(10, 20);
+      sum(10, 20, 30);
+      sum(10, 20, 30, 40);
     </script>
   </body>
 </html>

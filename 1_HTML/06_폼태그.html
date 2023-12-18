@@ -9,132 +9,160 @@
     <h2>폼 태그의 기본 구조</h2>
 
     <h3>검색 폼</h3>
-    <form action="" name="search_form" method="Get">
-      <label>검색할 내용 : <input type="text" name="Keyword" /></label>
+    <form action="" name="search_form" method="GET">
+      <label>검색할 내용 : <input type="text" name="keyword" /></label>
       <input type="submit" value="검색" />
     </form>
 
-    <h3>회원가입 품</h3>
-    <br action="" name="signup_fomr" method="POST">
+    <h3>회원가입 폼</h3>
+    <form action="" name="signup_form" method="POST">
       <fieldset>
         <legend>회원정보</legend>
-        <label for="userid">아이디 : </label><input type="text" id="userid" name="userid" />
-        <br />
-        <label for="userpwd">패스워드 : </label>
-        <input type="password" id="userpwd" name="userpwd" placeholder="패스워드를 입력하세요" />
+        <label for="userId">아이디 : </label>
+        <input type="text" id="userId" name="userId" required autofocus />
+        <br /><br />
+        <label for="userPwd">패스워드 : </label>
+        <input
+          type="password"
+          id="userPwd"
+          name="userPwd"
+          placeholder="패스워드를 입력하세요"
+        />
       </fieldset>
-      <br></br>
-     <fieldset>
+      <fieldset>
         <legend>배송정보</legend>
         <label for="userName">수령인 : </label>
-        <input type="text" id="userName" name="userName" value="신대규" readonly>
-        <br></br>
-        <label for="addr">주소</label>
-        <input type="text" id="addr" name="addr">
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          value="김미경"
+          readonly
+        />
+        <br /><br />
+        <label for="addr">주소 : </label>
+        <input type="text" id="addr" name="addr" />
       </fieldset>
-      <input type="submit" value="회원가입">
+      <input type="submit" value="회원가입" />
     </form>
 
-    <hr>
+    <hr />
 
-    <h3>type="radio|checkbox</h3>
+    <h3>type="radio|checkbox"</h3>
     <form action="">
-        <fieldset>
-            <legend>성별</legend>
-            <label><input type="radio" name="gender" value="M" > 남자 </label><br>
-            <label><input type="radio" name="gender" value="F"> 여자 </label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>관심사</legend>
-            <label><input type="checkbox" name="interest" value="pet"> 반려동물 </label> <br>
-            <label><input type="checkbox" name="interest" value="sing" checked > 노래 </label> <br>
-            <label><input type="checkbox" name="interest" value="drama" checked > 드라마 </label> <br>
-            <label><input type="checkbox" name="interest" value="e-sport"> E스포츠 시청 </label> <br>
-            <label><input type="checkbox" name="interest" value="game"> 게임 </label> <br>
-        </fieldset>
+      <fieldset>
+        <legend>성별</legend>
+        <label><input type="radio" name="gender" value="M" /> 남자</label><br />
+        <label><input type="radio" name="gender" value="F" /> 여자</label>
+      </fieldset>
 
+      <fieldset>
+        <legend>관심사</legend>
+        <label>
+          <input type="checkbox" name="interest" value="pet" /> 반려동물 </label
+        ><br />
+        <label
+          ><input type="checkbox" name="interest" value="sing" /> 노래</label
+        ><br />
+        <label
+          ><input type="checkbox" name="interest" value="drama" /> 드라마</label
+        ><br />
+        <label
+          ><input type="checkbox" name="interest" value="e-sport" />
+          E스포츠</label
+        >
+        시청<br />
+        <label
+          ><input type="checkbox" name="interest" value="game" /> 게임</label
+        ><br />
+      </fieldset>
 
-        <input type="submit" value="전송" >
-        <input type="reset" value="초기화" >
+      <input type="submit" value="전송" />
+      <input type="reset" value="초기화" />
     </form>
 
     <h3>type="hidden|file"</h3>
     <form action="">
-      <input type="hidden" name="hiddenvalue" value="1234">
-      
-      <label for="uploadfile"></label>
-      <input type="file" id="uploadfile" name="upload" multiple accept="image/*, .pdf">
-      <input type="submit" value="전송">
+      <input type="hidden" name="hiddenValue" value="1234" />
+
+      <label for="uploadFile"></label>
+      <input
+        type="file"
+        id="uploadFile"
+        name="upload"
+        multiple
+        accept="image/*, .pdf"
+      />
+      <input type="submit" value="전송" />
     </form>
 
     <h3>type="datetime-local|week|month|date|time"</h3>
-    <br action="">
+    <form action="">
       <label for="datetime-local">datetime : </label>
-      <input type="datetime-local" id="datetime-local">
+      <input type="datetime-local" id="datetime-local" />
 
-      <br></br>
+      <br /><br />
 
       <label for="week">week : </label>
-      <input type="week" id="week">
+      <input type="week" id="week" />
 
-      <br></br>
+      <br /><br />
 
       <label for="month">month : </label>
-      <input type="month" id="month">
+      <input type="month" id="month" />
 
-      <br></br>
+      <br /><br />
 
       <label for="date">date : </label>
-      <input type="date" id="date">
+      <input type="date" id="date" />
 
-      <br></br>
+      <br /><br />
 
       <label for="time">time : </label>
-      <input type="time" id="time">
+      <input type="time" id="time" />
     </form>
 
-    <h3>type="email|url|search"</h3>
-    <br action="">
+    <h3>type="email|url|search|tel"</h3>
+    <form action="">
       <label for="email">이메일 : </label>
-      <input type="email" id="email" name="email">
+      <input type="email" id="email" name="email" />
 
-      <br></br>
+      <br /><br />
 
       <label for="url">사이트 주소 : </label>
-      <input type="url" id="url">
+      <input type="url" id="url" />
 
-      <br></br>
+      <br /><br />
 
       <label for="search">검색 : </label>
-      <input type="search" id="search">
+      <input type="search" id="search" />
 
-      <br></br>
+      <br /><br />
 
       <label for="tel">전화번호 : </label>
-      <input type="tel" id="tel">
+      <input type="tel" id="tel" />
 
-      <br></br>
+      <br /><br />
 
-      <input type="submit" value="전송">
+      <input type="submit" value="전송" />
     </form>
 
     <h3>type="number|range|color"</h3>
-    <br action="">
+    <form action="">
       <label for="amount">수량 : </label>
-      <input type="number" id="amount" min="0" max="10" step="2"> 
+      <input type="number" id="amount" min="0" max="10" step="2" />
 
-      <br></br>
+      <br /><br />
 
       <label for="point">포인트 : </label>
-      <input type="range" id="point" min="0" max="1000" step="100">
+      <input type="range" id="point" min="0" max="1000" step="100" />
 
-      <br></br>
+      <br /><br />
 
       <label for="color">색상 : </label>
-      <input type="color" id="color">
+      <input type="color" id="color" />
 
-      <input type="button" value="버튼" onclick="alert('버튼 클릭!')">
+      <input type="button" value="버튼" onclick="alert('버튼 클릭!')" />
     </form>
 
     <h2>select 태그</h2>
@@ -142,29 +170,35 @@
       <label for="national">국적 : </label>
 
       <select name="national" id="national">
-        <optgroup label="아시아"> 
-        <option value="kr">한국</option>
-        <option value="ch">중국</option>
-        <option value="jp">일본</option>
-      </optgroup>
-      <optgroup label="기타">
-        <option value="us">미귝</option>
-        <option value="fr">프랑스</option>
-      </optgroup>.
-      <option selected>------------</option>
+        <optgroup label="아시아">
+          <option value="kr">한국</option>
+          <option value="ch">중국</option>
+          <option value="jp">일본</option>
+        </optgroup>
+        <optgroup label="기타">
+          <option value="us">미국</option>
+          <option value="fr">프랑스</option>
+        </optgroup>
+        <option selected>-----------</option>
       </select>
     </form>
 
     <h2>textarea 태그</h2>
     <form action="">
-      <textarea name="" id="" cols="30" rows="10" style="resize: none"></textarea>
-      
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        style="resize: none"
+      ></textarea>
+
       <!-- input type="submit"과 같은 역할 -->
       <button type="submit">전송</button>
 
       <!-- input type="reset"과 같은 역할 -->
       <button type="reset">초기화</button>
-      
+
       <!-- input type="button"과 같은 역할 -->
       <button type="button" onclick="alert('버튼 클릭!')">버튼</button>
     </form>

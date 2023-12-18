@@ -7,29 +7,29 @@ body {
   background-color: lightsalmon;
   background: linear-gradient(purple, pink);
   height: 100vh;
-  padding: 40x;
+  padding: 40px;
 }
-.space {
+.profile-card {
   /* background-color: white; */
-  background: 2px solid white;
+  border: 2px solid white;
   width: 350px;
   margin: auto;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
 }
-.space img {
+.profile-card img {
   width: 150px;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
-.space hi {
+.profile-card h1 {
   font-size: 1.5rem;
-  color: gray;
+  color: white;
   margin-top: 5px;
 }
-.space a {
+.profile-card a {
   display: block;
   /* background-color: lightsalmon; */
   border: 2px solid white;
@@ -39,8 +39,8 @@ body {
   margin: 15px 0;
   font-weight: bold;
 }
-.space a:hover {
+.profile-card a:hover {
   /* background-color: black; */
-  background-color: black;
+  background-color: white;
   color: black;
 }

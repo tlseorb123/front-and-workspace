@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+form {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+form div {
+  margin-bottom: 10px;
+}
+form span {
+  display: block;
+  color: #999;
+  margin-left: 12px;
+}

@@ -42,7 +42,7 @@
   padding-right: 100px;
 
   /* 위/아래 : 50px, 좌/우 : 30px */
-  padding: 50px 30px;
+  /* padding: 50px 30px; */
   /* 상 우 하 좌 : 시계방향 */
   padding: 30px 50px 20px 40px;
 }
@@ -50,10 +50,10 @@
   margin: 50px;
 }
 #margin2 {
-  margin-top: 30px;
-  margin-left: 20px;
+  /* margin-top: 30px; */
+  /* margin-left: 20px; */
   /* 위/아래 50px, 좌/우 30px */
-  margin: 50px 30px;
+  /* margin: 50px 30px; */
   /* 상 우 하 좌 */
   margin: 30px 50px 20px 30px;
 }
@@ -82,10 +82,10 @@
   /* double : 테두리를 이중선으로 표시 */
   border-style: double;
   /* border-radius : 테두리의 모서리를 둥글게 지정하는 속성 */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border-radius: 50%;
   /* top-left, top-right, bottom-left, bottom-right */
-  border-top-left-radius: 30px;
+  border-top-left-radius: 20px;
 }
 
 /*포지셔닝 */
@@ -139,7 +139,7 @@
 #vis1 {
   visibility: hidden;
   display: none;
-  background-color: beige;
+  background-color: black;
 }
 #vis2 {
   background-color: skyblue;

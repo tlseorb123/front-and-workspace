@@ -4,159 +4,228 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/연습문제1.css">
+    <link href="/연습문제1.css" />
     <script
       src="https://kit.fontawesome.com/4602e82315.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-    <h1>NETFLIX</h1>
-      <select name="national" id="national">
-        <option>한국어</option>
-        <option>English</option>
-      </select>
-    <a href="">로그인</a>
-  </header>
-  
-  <main>
-    <h1>영화, 시리즈 등을 무제한으로</h1>
-   <p>
-    5500원으로 시작하세요. 해지는 언제든 가능합니다.</p>
-   <p> 시청할 준비가 되셨나요?멤버십을 등록하거나 재시작하려면 
-    이메일 주소를 입력하세요.
-    </p>
-    
-    <form action="">
-      <input type="email" id="email" name="email" placeholder="이메일 주소" />
-      <input type="submit" value="시작하기" />
-    </form>
-  </main>
+    <!--  https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/9958fa1c-329e-441a-abd0-ea9cb539e8a4/KR-ko-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg 
+    main 태그에 배경이미지로 사용! 100vh-->
+    <main>
+      <header>
+        <h1>NETFLIX</h1>
+        <select name="national" id="national">
+          <option>한국어</option>
+          <option>English</option>
+        </select>
+        <a href="">로그인</a>
+      </header>
+      <!-- header 까지만 해보시고 다시 던져주세요~~ 다음주! -->
+
+      <section>
+        <h1>영화, 시리즈 등을 무제한으로</h1>
+        <p>5500원으로 시작하세요. 해지는 언제든 가능합니다.</p>
+        <p>
+          시청할 준비가 되셨나요?멤버십을 등록하거나 재시작하려면 이메일 주소를
+          입력하세요.
+        </p>
+
+        <form action="">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="이메일 주소"
+          />
+          <input type="submit" value="시작하기" />
+        </form>
+      </section>
+    </main>
 
     <h2>나의 니즈에 꼭 맞는 멤버십</h2>
 
-   <!-- div를 section이나 article 이런 태그들로 변경! -->
-    <div>
+    <article>
       <a href="">
-      <h2>프리미엄</h2>
-      <p>마치 영화관에 있는 듯, 최고의 화질과 음질로 즐기는 시청 경험.</p>
-      <p>월 17.000원</p> 
-    </a>
-   
+        <h2>프리미엄</h2>
+        <p>마치 영화관에 있는 듯, 최고의 화질과 음질로 즐기는 시청 경험.</p>
+        <p>월 17.000원</p>
+      </a>
+
       <a href="">
-      <h2>스탠다드</h2>
-      <p>콘텐츠를 저장해 이동 중에도 즐기는 신박한 경험.</p>
-      <p>월 13.500원</p>
-    </a>
-  
+        <h2>스탠다드</h2>
+        <p>콘텐츠를 저장해 이동 중에도 즐기는 신박한 경험.</p>
+        <p>월 13.500원</p>
+      </a>
+
       <a href="">
-      <h2>광고형 스탠다드</h2>
-      <p>
-        몇 개의 중간 광고와 함께 넷플릭스를 즐길 수 있는 가장 경제적인 방법.
-      </p>
-      <p>월 5.500원</p>
-    </a>
-    </div>
- 
-  
+        <h2>광고형 스탠다드</h2>
+        <p>
+          몇 개의 중간 광고와 함께 넷플릭스를 즐길 수 있는 가장 경제적인 방법.
+        </p>
+        <p>월 5.500원</p>
+      </a>
+    </article>
 
     <h2>가입해야 하는 또 다른 이유</h2>
-
+    <section>
       <div>
-        <!-- 각각 하나씩 묶어야 하는 태그들 필요! -->
         <h2>TV로 즐기세요</h2>
         <p>
           스마트 TV, PlayStation Xbox, Chromecast, Apple TV, 블루레이 플레이어
           등 다양한 디바이스에서 시청하세요.
         </p>
         <i class="fa-sharp fa-solid fa-tv"></i>
+      </div>
 
-    
+      <div>
         <h2>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h2>
         <p>간편하게 저장하고 빈틈없이 즐겨보세요.</p>
         <i class="fa-sharp fa-solid fa-arrow-down"></i>
+      </div>
 
-    
+      <div>
         <h2>다양한 디바이스로 시청하세요</h2>
         <p>
           각종 영화와 시리즈를 스마트폰, 태블릿, 노트북, TV에서 무제한으로
           스트리밍하세요.
         </p>
-    <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-camera"></i>
+      </div>
 
-  
+      <div>
         <h2>어린이 전용 프로필을 만들어 보세요</h2>
         <p>
           자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험, 자녀에게 이
-          특별한 경험을 선물하세요.
-          넷플릭스 회원이라면 무료입니다.
+          특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.
         </p>
         <i class="fa-sharp fa-regular fa-face-smile"></i>
       </div>
-    
+    </section>
 
     <h3>자주 묻는 질문</h3>
-    <!-- div 묶고 p 묶고 이렇게 한 이유가 뭐요? 너무 무의미한데 , icon 가지고 오는 것 해봐요! -->
-   <span> <!-- 여기 span도 다른 영역 태그로 변경! block인 애로! 영역을 span으로 쓴 이유가 뭐죠? span은 텍스트를 묶을 때 사용! -->
-      <!--a태그랑 i태그를 묶는 태그들 포함! 영역! -->
-      <!-- a 태그로 묶지 말고! 그냥 글씨 태그로 하셔도 됩니다! 안에 내용들도 넣어주시고!-->
-    <a href="">넷플릭스에소 어떤 콘텐츠를 시청할 수 있나요?</a>
-    <i class="fa-duotone fa-plus"></i>
-    <a href="">넷플릭스란 무엇인가요?</a>
-    <i class="fa-duotone fa-plus"></i>
-    <a href="">넷플릭스 요금은 얼마인가요?</a>
-    <i class="fa-duotone fa-plus"></i>
-    <a href="">어디에서 시청할 수 있나요?</a>
-    <i class="fa-duotone fa-plus"></i>
-    <a href="">멤버십을 해지하려면 어떻게 하나요?</a>
-    <i class="fa-duotone fa-plus"></i>
-    <a href="">아이들이 넷플릭스를 봐도 좋을까요?</a>
-    <i class="fa-duotone fa-plus"></i>
-</span>
+    <section>
+      <div>
+        <div>
+          <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
+          <i class="fa-duotone fa-plus"></i>
+        </div>
+        <div>
+          <p>
+            넷플릭스는 장편 영화, 다큐멘터리,시리즈,애미메이션,각종 상을 수상한
+            넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는
+            콘텐츠를 원하는 시간에 원하는 만큼 신청하실 수 있습니다.
+          </p>
+          <a href="">넷플릭스 콘텐츠를 한번 살펴보세요.</a>
+        </div>
+      </div>
+      <div>
+        <p>넷플릭스란 무엇인가요?</p>
+        <p>
+          넷플릭스는 각종 수상 경력에 빛나는 시리즈,영화,애니메이션,다큐멘터리
+          등 다양한 콘텐츠를 인터넷 연결이 가능한 수청 종의 디바이스에서 시청할
+          수 이쓴ㄴ 스트리밍 서비스입니다.
+        </p>
+        <i class="fa-duotone fa-plus"></i>
+      </div>
+      <div>
+        <p>넷플릭스 요금은 얼마인가요?</p>
+        <p>
+          스마트폰,태블릿,스마트TV,노트북,스트리밍 디바이스 등 다양한
+          디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십 요금은
+          월 17000원부터 5500원까지 다양합니다.추가 비용이나 약정이 없습니다.
+        </p>
+        <i class="fa-duotone fa-plus"></i>
+      </div>
+      <div>
+        <p>어디에서 시청할 수 있나요?</p>
+        <p>
+          언제 어디서나 시청할 수 있습니다.넷플릭스 계정으로 로그인하면 PC에서
+          netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고
+          넷플릭스 앱을 지원하는 디바이스 (스마트TV,스마트폰,테블릿,스트리밍
+          미디어 플레이어,게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.
+        </p>
+        <p>
+          iOS,Android,Windows 10용 앱에서는 좋아하는 시리지를 저장할 수도
+          있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는
+          곳에서도 시청하세요.넷플릭스는 어디서든 함께니까요.
+        </p>
+        <i class="fa-duotone fa-plus"></i>
+      </div>
+      <div>
+        <p>멤버십을 해지하려면 어떻게 하나요?</p>
+        <p>
+          넷플릭스는 부담 없이 간편합니다.성가신 계약도,약정도 없으니까요.멤버십
+          해지도 온라인에서 클릭 두 번이면 완료할 수 있습니다.해지 수수료도
+          없으니 원할 때 언제든 계정을 시작하거나 종료하세요.
+        </p>
+        <i class="fa-duotone fa-plus"></i>
+      </div>
+      <div>
+        <p>아이들이 넷플릭스를 봐도 좋을까요?</p>
+        <p>
+          멤버십에 넷플릭스 키즈 환경이 포함되어 있어 자녀가 자기만의 공간에서
+          가족용 시리즈와 영화를 즐기는 동안 부모가 이를 관리할 수 있습니다.
+        </p>
+        <p>
+          키즈 프로필과 더불어 PIN번호를 이용한 자녀 보호 기능도 있어,자녀가
+          시청할 수 있는 콘텐츠의 관람등급을 제한하고 자녀의 시청을 원치 않는
+          특정 작품을 차단할 수도 있습니다.
+        </p>
+        <i class="fa-duotone fa-plus"></i>
+      </div>
+    </section>
 
-   <h3> 시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
-   
-   <form action="">
-    <input type="email" id="email" name="email" placeholder="이메일 주소"/>
-    <input type="button" value="시작하기"/>
-   </form>
+    <h3>
+      시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
+      입력하세요.
+    </h3>
 
-   <footer>
-   <p>질문이 있으신가요?문의전화:
-   <a href="#">00-308-321-0161(수신자 부담)</a>
-  </p>
+    <form action="">
+      <input type="email" id="email" name="email" placeholder="이메일 주소" />
+      <input type="button" value="시작하기" />
+    </form>
 
-  <!-- 영역 잡을 때 span XXXXXXXXXX-->
-<span>
-  <!-- 안에서도 영역 잡아주고 바깥에 한꺼번에 묶는 영역 추가!-->
-<a href="#">자주 묻는 질문</a>                         
-<a href="#">고객 센터</a>
-<a href="#">계정</a>                                   
-<a href="#">미디어 센터</a>
-<a href="">투자 정보(IR)</a>                          
-<a href="">입사 정보</a>  
-<a href="">넷플릭스 지원 디바이스</a>                    
-<a href="">이용약관</a>
-<a href="">개인정보 처리방침</a>                        
-<a href="">쿠키 설정</a>
-<a href="">회사 정보</a>                              
-<a href="">문의하기</a>
-<a href="">속도 테스트</a>                            
-<a href="">법적 고지</a>
-<a href="">오직 넷플릭스에서</a></pre>
-</span>
+    <footer>
+      <p>
+        질문이 있으신가요?문의전화:
+        <a href="#">00-308-321-0161(수신자 부담)</a>
+      </p>
+      <section>
+        <div>
+          <a href="#">자주 묻는 질문</a>
+          <a href="">투자 정보(IR)</a>
+          <a href="">개인정보 처리방침</a>
+          <a href="">속도 테스트</a>
+        </div>
+        <div>
+          <a href="#">고객 센터</a>
+          <a href="">입사 정보</a>
+          <a href="">쿠키 설정</a>
+          <a href="">법적 고지</a>
+        </div>
+        <div>
+          <a href="#">계정</a>
+          <a href="">넷플릭스 지원 디바이스</a>
+          <a href="">회사 정보</a>
+          <a href="">오직 넷플릭스에서</a>
+        </div>
+        <div>
+          <a href="#">미디어 센터</a>
+          <a href="">이용약관</a>
+          <a href="">문의하기</a>
+        </div>
+      </section>
 
-<form action="">
-  <select name="national" id="national">
-  <option>한국어</option>                                                                                                                                                      
-  <option>English</option>
-</select>
-</form>
+      <form action="">
+        <select name="national" id="national">
+          <option>한국어</option>
+          <option>English</option>
+        </select>
+      </form>
 
-<h5>넷플릭스 대한민국</h5>
-</footer>
-
-
-</body>
+      <h5>넷플릭스 대한민국</h5>
+    </footer>
+  </body>
 </html>

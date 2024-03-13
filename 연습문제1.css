@@ -1,3 +1,19 @@
-main{
-  height: 100px;
+main {
+  height: 100vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/9958fa1c-329e-441a-abd0-ea9cb539e8a4/KR-ko-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+header h1 {
+  color: red;
+}
+main section {
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+}
+section h1 {
+  font-size: 60px;
+}
+section p {
+  font-size: 20px;
 }

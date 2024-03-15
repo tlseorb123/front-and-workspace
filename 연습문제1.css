@@ -1,3 +1,4 @@
+/* main + header */
 main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/9958fa1c-329e-441a-abd0-ea9cb539e8a4/KR-ko-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg");
@@ -12,32 +13,42 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 22px;
 }
 
 header h1 {
   color: red;
+  font-size: 40px;
 }
 
 main section {
   color: white;
   text-align: center;
-  margin-top: 12%;
+  margin-top: 16%;
 }
 section h1 {
+  font-weight: bolder;
   font-size: 35px;
   height: 40px;
+  margin-bottom: 40px;
 }
 section p {
   font-size: 16px;
+  padding: 12px;
+  margin-top: 10px;
 }
+
+/* input focus 시 css 제거하는 방법이 있을 거에요! 찾아서 추가해보는 것 추천 */
+
+/* 미디어쿼리 사용하려면 화면 줄일 때마다 css 수정한다 생각해야 함 -> 후순위! */
 @media screen and (min-width: 965px) {
   section p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 965px) {
   section h1 {
-    font-size: 55px;
+    font-size: 62px;
   }
 }
 @media screen and (min-width: 965px) {
@@ -69,7 +80,7 @@ main #email {
   background: rgba(176, 176, 216, 0.281);
   color: white;
   border-radius: 5px;
-  padding: 18px 40px;
+  padding: 18px 150px;
   font-size: 15px;
   border-style: solid;
   border-color: rgb(2, 155, 104);
@@ -78,7 +89,99 @@ main .sta {
   background: red;
   color: white;
   border-radius: 5px;
-  padding: 18px 40px;
+  padding: 18px 50px;
   font-size: 15px;
   text-decoration: none;
+}
+section .main1 {
+  padding: 5px;
+}
+.line {
+  border-top: 3px solid rgb(156, 36, 36);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+article {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.mina2 {
+  text-align: center;
+  padding-right: 45%;
+  margin-top: 60px;
+  color: white;
+}
+a h2 {
+  color: white;
+}
+article a p {
+  color: darkgray;
+  padding-top: 20px;
+}
+.box1 {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 390px;
+  height: 234px;
+  background: linear-gradient(180deg, #45172b 0%, #210d0e 100%);
+  margin: 8px;
+  padding: 30px;
+  transition: all 0.5s;
+}
+.box2 {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 390px;
+  height: 234px;
+  background: linear-gradient(180deg, #45172b 0%, #210d0e 100%);
+  margin: 8px;
+  padding: 30px;
+  transition: all 0.5s;
+}
+.box3 {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 390px;
+  height: 234px;
+  background: linear-gradient(180deg, #45172b 0%, #210d0e 100%);
+  margin: 8px;
+  padding: 30px;
+  transition: all 0.5s;
+}
+body {
+  background-color: #000;
+}
+.box1:hover {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(#9b3561, #210d0e);
+}
+.box2:hover {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(#9b3561, #210d0e);
+}
+.box3:hover {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(#9b3561, #210d0e);
 }

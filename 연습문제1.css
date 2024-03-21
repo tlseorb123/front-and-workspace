@@ -29,13 +29,18 @@ main section {
 section h1 {
   font-weight: bolder;
   font-size: 35px;
+  margin-bottom: 45px;
+}
+section h1 p {
+  font-size: 35px;
   height: 40px;
-  margin-bottom: 40px;
+  padding-top: 10px;
 }
 section p {
   font-size: 16px;
   padding: 12px;
   margin-top: 10px;
+  line-height: 25px;
 }
 
 /* input focus 시 css 제거하는 방법이 있을 거에요! 찾아서 추가해보는 것 추천 */
@@ -48,6 +53,11 @@ section p {
 }
 @media screen and (min-width: 965px) {
   section h1 {
+    font-size: 62px;
+  }
+}
+@media screen and (min-width: 965px) {
+  section h1 p {
     font-size: 62px;
   }
 }
@@ -69,8 +79,10 @@ section p {
   background: black;
   color: white;
   border-radius: 5px;
-  padding: 6px 18px;
+  width: 130px;
+  height: 30px;
   font-size: 15px;
+  text-align: center;
 }
 #national option {
   background: white;
@@ -80,21 +92,19 @@ main #email {
   background: rgba(176, 176, 216, 0.281);
   color: white;
   border-radius: 5px;
-  padding: 18px 150px;
-  font-size: 15px;
+  width: 460px;
+  height: 55px;
   border-style: solid;
-  border-color: rgb(2, 155, 104);
+  border-color: rgba(176, 176, 216, 0.281);
 }
 main .sta {
   background: red;
   color: white;
   border-radius: 5px;
-  padding: 18px 50px;
-  font-size: 15px;
-  text-decoration: none;
-}
-section .main1 {
-  padding: 5px;
+  width: 200px;
+  padding: 10px 10px 19px 10px;
+  font-size: 25px;
+  display: inline-block;
 }
 .line {
   border-top: 3px solid rgb(156, 36, 36);
@@ -290,7 +300,6 @@ body {
 }
 .sec1 p {
   font-size: 25px;
-  
 }
 .box9 a {
   display: block;
@@ -321,6 +330,10 @@ body {
   padding: 7px;
   line-height: 30px;
   align-items: center;
+  display: none;
+}
+.box8:hover + .box9 {
+  display: block;
 }
 
 .box10 {
@@ -344,7 +357,10 @@ body {
   margin: 8px;
   padding: 7px;
   line-height: 30px;
-  
+  display: none;
+}
+.box10:hover + .box11 {
+  display: block;
 }
 .box12 {
   box-sizing: border-box;
@@ -365,6 +381,10 @@ body {
   margin: 8px;
   padding: 7px;
   line-height: 30px;
+  display: none;
+}
+.box12:hover + .box13 {
+  display: block;
 }
 .box14 {
   box-sizing: border-box;
@@ -384,6 +404,10 @@ body {
   margin: 8px;
   padding: 7px;
   line-height: 30px;
+  display: none;
+}
+.box14:hover + .box15 {
+  display: block;
 }
 .box16 {
   box-sizing: border-box;
@@ -403,6 +427,10 @@ body {
   margin: 8px;
   padding: 7px;
   line-height: 30px;
+  display: none;
+}
+.box16:hover + .box17 {
+  display: block;
 }
 .box18 {
   box-sizing: border-box;
@@ -422,6 +450,10 @@ body {
   margin: 8px;
   padding: 7px;
   line-height: 30px;
+  display: none;
+}
+.box18:hover + .box19 {
+  display: block;
 }
 div .fa-duotone {
   display: block;
@@ -430,8 +462,88 @@ div .fa-duotone {
   top: -55px;
   font-size: 50px;
 }
-h3{
+h3 {
   color: white;
+  text-align: center;
+  display: block;
+  padding-right: 30%;
+  padding-top: 70px;
+}
+.foot1 {
+  position: relative;
+  left: 350px;
+  top: 20px;
+  display: inline-block;
+}
+.foot1 #email {
+  color: white;
+  background-color: rgba(176, 176, 216, 0.281);
+  width: 850px;
+  height: 60px;
+  border-radius: 5px;
+  border-color: rgb(2, 155, 104);
+  border-style: solid;
+}
+.foot1 #but1 {
+  color: white;
+  background-color: red;
+  width: 170px;
+  border-radius: 5px;
+  height: 60px;
+  font-size: 20px;
+  padding: 4px 0px 12px;
+}
+footer p a {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding-right: 20%;
+  margin-top: 50px;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding-right: 21%;
+  margin-top: 50px;
+}
+footer section {
   display: flex;
   justify-content: center;
+  font-size: 15px;
+  margin-top: 30px;
+}
+footer section a {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 12px;
+}
+footer .ate1 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 290px;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: column;
+}
+footer .ate2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 290px;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: column;
+}
+footer .ate3 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 290px;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: column;
+}
+footer .ate4 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 290px;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: column;
 }

@@ -21,7 +21,7 @@
         <!-- select와 a 태그를 묶는 태그 추가 -->
         <div>
           <select name="national" id="national">
-            <option>한국어</option>
+            <option disabled selected> 한국어</option>
             <option>English</option>
           </select>
 
@@ -30,7 +30,7 @@
       </header>
 
       <section>
-        <h1>영화, 시리즈 등을 무제한으로</h1>
+        <h1>영화, 시리즈 등을 <p>무제한으로</p></h1>
         <p>5500원으로 시작하세요. 해지는 언제든 가능합니다.</p>
         <p>
           시청할 준비가 되셨나요?멤버십을 등록하거나 재시작하려면 이메일 주소를
@@ -204,11 +204,13 @@
       시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
       입력하세요.
     </h3>
-
-    <form action="">
+     
+    
+    <form action="#" class="foot1">
       <input type="email" id="email" name="email" placeholder="이메일 주소" />
-      <input type="button" value="시작하기" />
+      <input type="button" id="but1" value="시작하기 >" />
     </form>
+ 
 
     <footer>
       <p>
@@ -216,25 +218,25 @@
         <a href="#">00-308-321-0161(수신자 부담)</a>
       </p>
       <section>
-        <div>
+        <div class="ate1">
           <a href="#">자주 묻는 질문</a>
           <a href="">투자 정보(IR)</a>
           <a href="">개인정보 처리방침</a>
           <a href="">속도 테스트</a>
         </div>
-        <div>
+        <div class="ate2">
           <a href="#">고객 센터</a>
           <a href="">입사 정보</a>
           <a href="">쿠키 설정</a>
           <a href="">법적 고지</a>
         </div>
-        <div>
+        <div class="ate3">
           <a href="#">계정</a>
           <a href="">넷플릭스 지원 디바이스</a>
           <a href="">회사 정보</a>
           <a href="">오직 넷플릭스에서</a>
         </div>
-        <div>
+        <div class="ate4">
           <a href="#">미디어 센터</a>
           <a href="">이용약관</a>
           <a href="">문의하기</a>
@@ -242,7 +244,7 @@
       </section>
 
       <form action="">
-        <select name="national" id="national">
+        <select name="national" id="national" class="nat">
           <option>한국어</option>
           <option>English</option>
         </select>

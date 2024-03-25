@@ -23,10 +23,6 @@ header h1 img {
     width: 100px;
   }
 }
-@media screen and (max-width: 740px) {
-  header h1 img {
-  }
-}
 @media screen and (max-width: 325px) {
   header {
     justify-content: flex-start;
@@ -36,7 +32,7 @@ header h1 img {
 main section {
   color: white;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 section h1 {
   font-weight: bolder;
@@ -90,6 +86,7 @@ section div p {
   section h1 p {
     font-size: 100%;
     margin-top: -3.5%;
+    white-space: nowrap;
   }
 }
 @media screen and (max-width: 959px) {
@@ -101,6 +98,12 @@ section div p {
   section h1 {
     font-size: 200%;
     display: block;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 270px) {
+  section p {
+    white-space: normal;
   }
 }
 .han1 {
@@ -173,9 +176,9 @@ main #email:focus {
 }
 @media screen and (max-width: 599px) {
   .main1 .sta {
-    width: 30%;
-    font-size: 100%;
-    padding: 4%;
+    width: 130px;
+    font-size: 15px;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -194,8 +197,19 @@ main .sta {
 }
 .line {
   border-top: 3px solid rgb(156, 36, 36);
-  margin-bottom: 5%;
+  margin-top: -200px;
 }
+@media screen and (max-width: 1278px) {
+  .line {
+    margin-top: -300px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .line {
+    margin-top: -42%;
+  }
+}
+
 h2 {
   font-size: 30px;
   font-weight: bolder;
@@ -207,9 +221,10 @@ article {
 }
 .main2 {
   text-align: center;
-  padding-right: 54%;
+  padding-right: 57%;
   margin-top: 60px;
   color: white;
+  font-size: 26px;
 }
 a h2 {
   color: white;
@@ -233,13 +248,40 @@ article a p {
   transition: all 0.5s;
 }
 @media screen and (max-width: 1278px) {
-  .box1 {
-    font-size: 110%;
-    width: 14%;
-    padding: 1.3% 0% 1.8%;
+  .main2 {
+    padding-left: 1%;
   }
 }
-
+@media screen and (max-width: 959px) {
+  .main2 {
+    font-size: 25px;
+    text-align: start;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .line1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .line1 {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .box1 {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box1 {
+    width: 95%;
+    height: 1%;
+  }
+}
 .box2 {
   box-sizing: border-box;
   border: 1px solid #000;
@@ -251,6 +293,18 @@ article a p {
   padding: 30px;
   transition: all 0.5s;
 }
+@media screen and (max-width: 1278px) {
+  .box2 {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box2 {
+    width: 95%;
+    height: 1%;
+    margin-top: -5px;
+  }
+}
 .box3 {
   box-sizing: border-box;
   border: 1px solid #000;
@@ -261,6 +315,18 @@ article a p {
   margin: 8px;
   padding: 30px;
   transition: all 0.5s;
+}
+@media screen and (max-width: 1278px) {
+  .box3 {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box3 {
+    width: 95%;
+    height: 1%;
+    margin-top: -5px;
+  }
 }
 body {
   background-color: #000;
@@ -302,7 +368,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 15px;
-  width: 19%;
+  width: 360px;
   height: 380px;
   background: linear-gradient(180deg, #192247 0%, #210c17 100%);
   margin: 8px;
@@ -312,7 +378,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 15px;
-  width: 19%;
+  width: 360px;
   height: 380px;
   background: linear-gradient(180deg, #192247 0%, #210c17 100%);
   margin: 8px;
@@ -322,7 +388,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 15px;
-  width: 19%;
+  width: 360px;
   height: 380px;
   background: linear-gradient(180deg, #192247 0%, #210c17 100%);
   margin: 8px;
@@ -332,7 +398,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 15px;
-  width: 19%;
+  width: 360px;
   height: 380px;
   background: linear-gradient(180deg, #192247 0%, #210c17 100%);
   margin: 8px;
@@ -342,6 +408,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 10px;
 }
 .main4 p {
@@ -375,22 +442,104 @@ body {
 .fa-face-smile {
   display: block;
   text-align: end;
-  padding-top: 30px;
+  padding-top: 60px;
   font-size: 45px;
+}
+@media screen and (max-width: 1278px) {
+  .main3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .main4 h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .main4 {
+    flex-direction: column;
+    padding-top: 1px;
+  }
+  .main3 {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: start;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .box4 {
+    width: 42%;
+    height: 220px;
+  }
+  .fa-tv {
+    padding-top: 0%;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .box5 {
+    width: 42%;
+    height: 220px;
+  }
+  .fa-arrow-down {
+    padding-top: 0%;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .box6 {
+    width: 42%;
+    height: 260px;
+  }
+  .fa-camera {
+    padding-top: 0%;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .box7 {
+    width: 42%;
+    height: 260px;
+  }
+  .fa-face-smile {
+    padding-top: 0%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box4 {
+    width: 97%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box5 {
+    width: 97%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box6 {
+    width: 97%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 959px) {
+  .box7 {
+    width: 97%;
+    height: auto;
+  }
 }
 .main5 {
   text-align: center;
-  padding-right: 53%;
-  margin-top: 60px;
+  padding: 4% 0% 0% 13%;
+  text-align: start;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 .sec1 {
   color: white;
   text-align: left;
   display: block;
-  width: 64%;
-  margin: 0 auto;
+  padding: 0% 20% 0% 10%;
 }
 .sec1 p {
   font-size: 25px;

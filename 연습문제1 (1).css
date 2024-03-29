@@ -420,7 +420,7 @@ body {
 .sec1 p {
   font-size: 25px;
 }
-.box8 {
+#bout-one-line {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -453,18 +453,6 @@ body {
 .box8:hover + .box9 {
   display: block;
 }
-
-.box10 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  width: 1200px;
-  height: 84px;
-  background-color: rgb(45, 45, 45);
-  margin: 2px;
-}
 .box11 {
   text-wrap: wrap;
   box-sizing: border-box;
@@ -479,17 +467,6 @@ body {
 }
 .box10:hover + .box11 {
   display: block;
-}
-.box12 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  width: 1200px;
-  height: 84px;
-  background-color: rgb(45, 45, 45);
-  margin: 2px;
 }
 .box13 {
   text-align: left;
@@ -506,17 +483,6 @@ body {
 .box12:hover + .box13 {
   display: block;
 }
-.box14 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  width: 1200px;
-  height: 84px;
-  background-color: rgb(45, 45, 45);
-  margin: 2px;
-}
 .box15 {
   box-sizing: border-box;
   border: 1px solid #000;
@@ -531,17 +497,6 @@ body {
 .box14:hover + .box15 {
   display: block;
 }
-.box16 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  width: 1200px;
-  height: 84px;
-  background-color: rgb(45, 45, 45);
-  margin: 2px;
-}
 .box17 {
   box-sizing: border-box;
   border: 1px solid #000;
@@ -555,17 +510,6 @@ body {
 }
 .box16:hover + .box17 {
   display: block;
-}
-.box18 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  width: 1200px;
-  height: 84px;
-  background-color: rgb(45, 45, 45);
-  margin: 2px;
 }
 .box19 {
   box-sizing: border-box;

@@ -1,21 +1,15 @@
-const para = document.querySelector("p");
-
-para.addEventListener("click", updateName);
-
-function updateName() {
-  const name = prompt("Enter a new name");
-  para.textContent = `Player 1: ${name}`;
+function to() {
+  
+  // 토글 할 버튼 선택 (btn1)
+  const btn1 = document.querySelectorAll('#btn1');
+  
+  // btn1 숨기기 (display: none)
+  if(btn1.style.display !== 'none') {
+    btn1.style.display = 'none';
+  }
+  // btn` 보이기 (display: block)
+  else {
+    btn1.style.display = 'block';
+  }
+  
 }
-
-function createParagraph() {
-  const para = document.createElement("p");
-  para.textContent = "You clicked the button!";
-  document.body.appendChild(para);
-}
-
-const buttons = document.querySelectorAll("button");
-
-for (const button of buttons) {
-  button.addEventListener("click", createParagraph);
-}
-

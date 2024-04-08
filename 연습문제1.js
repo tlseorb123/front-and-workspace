@@ -13,3 +13,8 @@ function to() {
   }
   
 }
+
+const button = document.querySelectorAll("bout-one-line");
+button.addEventListener("click", () {
+  button.style.backgroundColor= "red";
+})

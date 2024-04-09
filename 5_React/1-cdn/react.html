@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <di id="root"></di>
+    <div id="root"></div>
     <script type="text/babel">
       let counter = 0;
       const setCount = () => {
@@ -28,20 +28,20 @@
       const button = React.createElement(
         "button",
         { onClick: setCount },
-        "Click"
+        "Click!"
       );
       const container = React.createElement("div", null, h1, button);
       */
-
       /* JSX 문법으로 변경 -> */
-      const container = () => {
+      const Container = () => {
         return (
           <div>
-            <h1>Total Clicks : {conuter}</h1>
+            <h1>Total Clicks : {counter}</h1>
             <button onClick={setCount}>Click!</button>
           </div>
         );
       };
+      ReactDOM.render(<Container />, root);
     </script>
   </body>
 </html>

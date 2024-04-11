@@ -1,0 +1,44 @@
+/* 변수 */
+$main-color: pink;
+$primary-size: 8rem;
+
+/* 믹스인 ->@include */
+@mixin text-center {
+  text-align: center;
+}
+
+/* 상속 -> @extend */
+.broder {
+  border: 10px solid gold;
+}
+
+div {
+  @include text-center; // 믹스인
+
+  background-color: black;
+  color: white;
+  font-size: $primary-size; // $ 변수가 들어갔다
+
+  /* 중첩 */
+  h1 {
+    &:hover {
+      background-color: $main-color; // $ 변수 들어갔다
+    }
+    color: yellow;
+  }
+}
+
+.class {
+  @extend .broder; //상속
+
+  background-color: green;
+  font-size: $primary-size;
+
+  @media screen and (max-width: 800px) {
+    background-color: skyblue;
+  }
+}
+
+#id {
+  background-color: navy;
+}

@@ -33,15 +33,19 @@ document.getElementById("child-6").addEventListener("click", function (e) {
   console.log("클릭된 위치: " + e.clientX + ", " + e.clientY);
 });
 
-document.getElementById("child-1").addEventListener("click", function () {
-  var elementToHide = document.getElementById("child-2");
-  if (elementToHide.style.display === "none") {
-    elementToHide.style.display = "block";
-  } else {
-    elementToHide.style.display = "none";
+document.addEventListener("click", function (event) {
+  if (event.target.id === "child-1") {
+    var elements = document.querySelectorAll(".asd2");
+    elements.forEach(function (e) {
+      if (e.style.display === "none") {
+        e.style.display = "block";
+      } else {
+        e.style.display = "none";
+      }
+    });
   }
 });
 
 // 토글 : 두 가지 상태를 클릭했을 때 번갈아가며 전환하는 경우를 토글이라고 한다.
-// js에서 인라인 스타일 :  js에서 HTML 요소를 조작 상태에 따라 동적으로 스타일을 
+// js에서 인라인 스타일 :  js에서 HTML 요소를 조작 상태에 따라 동적으로 스타일을
 // 변경할 때 사용한다.

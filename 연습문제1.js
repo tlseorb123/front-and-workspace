@@ -1,12 +1,13 @@
+
 document.addEventListener("click", function (event) {
-  if (event.target.id === "bout-one-line") {
-    var elements = document.querySelectorAll("#out-line");
-    elements.forEach(function (e) {
-      if (e.style.display === "none") {
-        e.style.display = "block";
+  if (event.target.id==="bout-one-line") {
+    var sibling = event.target.nextElementSibling;
+    if (sibling.id === "out-line") {
+      if (sibling.style.display === "none") {
+        sibling.style.display = "block";
       } else {
-        e.style.display = "none";
+        sibling.style.display = "none";
       }
-    });
+    }
   }
 });

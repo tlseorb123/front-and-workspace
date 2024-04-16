@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Create from "./pages/Create";
 import Layout from "./components/Layout";
+import Detail from "./pages/Detail";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,14 @@ const router = createBrowserRouter([
       { path: "create", element: <Create /> },
     ],
   },
-
-  //  {
-  //    path: "/create",
-  //    element: <Create />,
-  //  },
+  {
+    path: "/detail/:no",
+    element: <Detail />,
+  },
+  //   {
+  //     path: "/create",
+  //     element: <Create />,
+  //   },
 ]);
-// Home, Error, Create 화면 구현 할 때 import를 꼭 해야한다.
+
 export default router;

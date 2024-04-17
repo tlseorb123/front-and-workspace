@@ -1,6 +1,6 @@
-import { increase, decrease } from "./store/counter";
-import { useDispatch, useSelector } from "react-redux";
 import Header from "./components/Header";
+import { increase, decrease } from "./store/counter";
+import { useDispatch } from "react-redux";
 
 const App = () => {
   const dispatch = useDispatch();

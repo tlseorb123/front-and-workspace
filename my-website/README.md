@@ -1,4 +1,4 @@
-# vue-frontboard
+# my-website
 
 ## Project setup
 ```

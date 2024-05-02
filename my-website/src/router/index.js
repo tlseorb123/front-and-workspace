@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../components/Home.vue";
 import About from "../components/About.vue";
 import Contact from "../components/Contact.vue";
+import Vue from "vue";
+import VueRouter from "vue-router"
 
 // eslint-disable-next-line no-unused-vars
 const routes = [
@@ -21,7 +23,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  router,
+  routes: routes,
 });
 
 export default router;

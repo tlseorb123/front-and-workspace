@@ -1,0 +1,67 @@
+< !DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Vue.js 에플리케이션이 마운트되는 위치 -->
+      <p>{{count}}</p>
+      <button v-on:click="countUp">카운터 업</button>
+      <button v-on:click="countDown">카운터 다운</button>
+    </div>
+
+    <div id="data">
+      <div v-for="data in data_for">{{data.text}}</div>
+    </div>
+
+    <div id="evne">
+      <div>{{message}}</div>
+      <button v-on:click="reverseText">기능테스트</button>
+      <div id="textResult"></div>
+      <button v-on:click="methodTest">알림테스트</button>
+    </div>
+
+    <!-- Vue,js 에플리케이션의 스크립트 파일을 포함-->
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          count: 0,
+        },
+        methods: {
+          countUp: function () {
+            this.count++;
+          },
+          countDown: function () {
+            this.count--;
+          },
+        },
+      });
+
+      var app = new Vue({
+        el: "#data",
+        data: {
+          data_for: [{ text: 1 }, { text: 2 }, { text: 3 }],
+        },
+      });
+
+      var app = new Vue({
+      el: "evne",
+      data:{
+        message:"기능테스트"
+      },
+      methods{
+          methodsTest: function(){
+            alert("테스트입니다");
+          },
+        }
+      }
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

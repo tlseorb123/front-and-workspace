@@ -1,6 +1,8 @@
-import Home from "./page/Home";
-import Create from "./page/Create";
 import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Create from "./pages/Create";
+import Detail from "./pages/Detail";
+import Select from "./pages/Select";
 
 const router = createBrowserRouter([
   {
@@ -11,5 +13,14 @@ const router = createBrowserRouter([
     path: "/create",
     element: <Create />,
   },
+  {
+    path: "/detail",
+    element: <Detail />,
+  },
+  {
+    path: "/select",
+    element: <Select />,
+  },
 ]);
+
 export default router;

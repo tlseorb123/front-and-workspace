@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <Header />
+    <HeaderPage />
     <router-link to="/">메인페이지</router-link>
     <router-link to="/about">게시판</router-link>
     <router-link to="/profile">나의 프로필</router-link>
     <router-view />
-    <Footer />
+    <FooterPage />
   </div>
 </template>
 
 <script>
-import { Headerpage } from "./components/common/Header.vue";
-import { Footerpage } from "./components/common/Footer.vue";
+import { HeaderPage } from "./components/common/HeaderPage.vue";
+import { FooterPage } from "./components/common/FooterPage.vue";
+import { HomePage } from "./views/HomePage.vue";
 
 export default {
   name: "App",
   components: {
-    Headerpage,
-    Footerpage,
+    HeaderPage,
+    FooterPage,
+    HomePage,
   },
 };
 </script>
